@@ -32,7 +32,7 @@ nav *{
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(40%,-20%);
+    transform: translate(-10%,10%);
     content: "2";
     font-weight: 600;
     padding: 1px;
@@ -72,14 +72,26 @@ input {
 }
 button.create{
     border-radius: 25px;
+}
+button.mic,
+button.create,
+.left-nav button,
+.notifications{
     padding: 8px;
 }
-button.mic{
-    padding: 8px;
+.searchbar button:hover,
+.mic:hover,
+.create:hover,
+.notifications:hover,
+.left-nav button:hover{
+    background-color: rgb(187, 187, 187);
+    transition: .3s;
 }
 button.mic,
 button.avatar,
-button.avatar img{
+button.avatar img,
+.left-nav button,
+.notifications{
     border-radius: 50%;
 }
 button.avatar img{
@@ -137,6 +149,11 @@ button{
     .mic,
     .searchbar button{
         background-color: transparent;
+        border: none;
+    }
+    .mic:hover,
+    .searchbar button:hover{
+        background-color: rgb(187, 187, 187);
         border: none;
     }
 }
