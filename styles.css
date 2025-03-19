@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+nav,
+nav *{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    height: 60px;
+    padding: 0 1rem;
+}
+.youtube-icon{
+    width: 150px;
+    height: auto;
+}
